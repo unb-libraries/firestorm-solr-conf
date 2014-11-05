@@ -20,6 +20,8 @@
    <dynamicField name="tos_de_*" type="text_de" indexed="true" stored="true" multiValued="false" termVectors="true" omitNorms="true"/>
    <dynamicField name="tom_de_*" type="text_de" indexed="true" stored="true" multiValued="true" termVectors="true" omitNorms="true"/>
 -->
+
    <field name="database_id" type="long" indexed="true" stored="true" multiValued="false"/>
    <copyField source="is_field_document_id" dest="database_id"/>
+
 </fields>
