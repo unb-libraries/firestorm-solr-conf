@@ -27,10 +27,10 @@
    <field name="call_number" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
    <copyField source="tm_field_call_number" dest="call_number"/>
 
-   <field name="category" type="string" indexed="true" stored="true" multiValued="true"/>
+   <field name="category" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
    <copyField source="sm_field_subject_heading$name" dest="category"/>
 
-   <field name="creator" type="string" indexed="true" stored="true" multiValued="false"/>
+   <field name="creator" type="text" indexed="true" stored="true" multiValued="false" termVectors="true"/>
    <copyField source="ss_field_issuing_body$name" dest="creator"/>
 
    <field name="background" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
