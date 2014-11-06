@@ -33,6 +33,9 @@
    <field name="creator" type="text" indexed="true" stored="true" multiValued="false" termVectors="true"/>
    <copyField source="ss_field_issuing_body$name" dest="creator"/>
 
+   <field name="archival_ref_no" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
+   <copyField source="tm_field_other_numbers$value" dest="archival_ref_no"/>
+
    <field name="background" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
    <copyField source="tm_field_background_information$value" dest="background"/>
 
