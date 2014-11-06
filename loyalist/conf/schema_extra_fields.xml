@@ -30,6 +30,9 @@
    <field name="category" type="string" indexed="true" stored="true" multiValued="true"/>
    <copyField source="sm_field_subject_heading$name" dest="category"/>
 
+   <field name="creator" type="string" indexed="true" stored="true" multiValued="false"/>
+   <copyField source="ss_field_issuing_body$name" dest="creator"/>
+
    <field name="background" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
    <copyField source="tm_field_background_information$value" dest="background"/>
 
@@ -38,5 +41,5 @@
 
    <field name="originals" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
    <copyField source="tm_field_originals$value" dest="originals"/>
-   
+
 </fields>
