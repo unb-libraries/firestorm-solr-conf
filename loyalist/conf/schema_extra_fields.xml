@@ -26,5 +26,17 @@
 
    <field name="call_number" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
    <copyField source="tm_field_call_number" dest="call_number"/>
+
+   <field name="category" type="string" indexed="true" stored="true" multiValued="true"/>
+   <copyField source="sm_field_subject_heading$name" dest="category"/>
+
+   <field name="background" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
+   <copyField source="tm_field_background_information$value" dest="background"/>
+
+   <field name="contents" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
+   <copyField source="tm_field_contents$value" dest="contents"/>
+
+   <field name="originals" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
+   <copyField source="tm_field_originals$value" dest="originals"/>
    
 </fields>
