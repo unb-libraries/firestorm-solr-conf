@@ -24,4 +24,7 @@
    <field name="database_id" type="long" indexed="true" stored="true" multiValued="false"/>
    <copyField source="is_field_document_id" dest="database_id"/>
 
+   <field name="call_number" type="text" indexed="true" stored="true" multiValued="true" termVectors="true"/>
+   <copyField source="tm_field_call_number" dest="call_number"/>
+   
 </fields>
