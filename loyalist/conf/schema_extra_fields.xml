@@ -21,6 +21,9 @@
    <dynamicField name="tom_de_*" type="text_de" indexed="true" stored="true" multiValued="true" termVectors="true" omitNorms="true"/>
 -->
 
+   <field name="title" type="text" indexed="true" stored="true" multiValued="false" termVectors="true"/>
+   <copyField source="ss_title" dest="title"/>
+   
    <field name="database_id" type="long" indexed="true" stored="true" multiValued="false"/>
    <copyField source="is_field_document_id" dest="database_id"/>
 
